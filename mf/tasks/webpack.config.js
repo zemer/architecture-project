@@ -65,7 +65,9 @@ module.exports = (_, argv) => ({
       name: "tasks",
       filename: "remoteEntry.js",
       remotes: {},
-      exposes: { "./TasksTestControl": "./src/components/TasksTestControl.js" },
+      exposes: {
+        "./TaskList": "./src/components/TaskList.js",
+      },
       shared: {
         ...deps,
         react: {
